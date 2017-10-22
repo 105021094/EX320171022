@@ -19,7 +19,6 @@ public class LoginFrame extends JFrame{
     public void initComp(){
         screenW = dim.width;
         screenH = dim.height;
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         this.setBounds(screenW/2-frmW/2,screenH/2-frmH/2,frmW,frmH);
         cp = this.getContentPane();
         cp.setLayout(new GridLayout(3,2,3,3));
