@@ -6,7 +6,7 @@ public class MainFrame extends JFrame{
     private Container cp;
     private JPanel jpn = new JPanel(new GridLayout(3,3));
     private JTextField jtf = new JTextField();
-    private JButton jbts[] = new JButton[9];
+    private JButton jbts[] = new JButton[10];
     private LoginFrame loginFrame;
     public MainFrame(LoginFrame login){
         loginFrame = login;
@@ -34,7 +34,7 @@ public class MainFrame extends JFrame{
         cp.add(jtf,BorderLayout.NORTH);
         cp.add(jpn,BorderLayout.CENTER);
         jtf.setEditable(false);
-        for(int i=0;i<9;i++){
+        for(int i=0;i<=9;i++){
             jbts[i] = new JButton(Integer.toString(i));
             jpn.add(jbts[i]);
             jbts[i].addActionListener(new ActionListener() {
